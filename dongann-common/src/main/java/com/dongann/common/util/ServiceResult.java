@@ -1,7 +1,8 @@
-package com.dongann.service.util;
+package com.dongann.common.util;
 
-import com.dongann.service.enums.ErrCodes;
-import com.dongann.service.exception.BusinessException;
+
+import com.dongann.common.enums.ErrCodes;
+import com.dongann.common.exception.BusinessException;
 
 import java.io.Serializable;
 import java.util.HashMap;

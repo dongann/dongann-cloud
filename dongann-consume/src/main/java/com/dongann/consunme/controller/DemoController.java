@@ -1,8 +1,8 @@
 package com.dongann.consunme.controller;
 
-import com.dongann.consunme.dto.DemoDto;
+import com.dongann.common.dto.DemoDto;
+import com.dongann.common.util.ServiceResult;
 import com.dongann.consunme.feign.DemoFeign;
-import com.dongann.consunme.util.ServiceResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

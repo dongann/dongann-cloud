@@ -1,7 +1,8 @@
 package com.dongann.service.sevice.impl;
 
+import com.dongann.common.util.ServiceResult;
 import com.dongann.service.sevice.DemoService;
-import com.dongann.service.util.ServiceResult;
+
 import org.springframework.stereotype.Service;
 
 /**

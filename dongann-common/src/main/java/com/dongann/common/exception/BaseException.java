@@ -1,4 +1,4 @@
-package com.dongann.service.exception;
+package com.dongann.common.exception;
 
 public class BaseException extends RuntimeException {
 

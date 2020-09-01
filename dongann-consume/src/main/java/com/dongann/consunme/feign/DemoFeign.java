@@ -1,7 +1,8 @@
 package com.dongann.consunme.feign;
 
-import com.dongann.consunme.dto.DemoDto;
-import com.dongann.consunme.util.ServiceResult;
+
+import com.dongann.common.dto.DemoDto;
+import com.dongann.common.util.ServiceResult;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;

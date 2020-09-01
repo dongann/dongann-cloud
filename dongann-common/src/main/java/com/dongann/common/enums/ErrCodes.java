@@ -1,4 +1,4 @@
-package com.dongann.service.enums;
+package com.dongann.common.enums;
 
 public enum ErrCodes {
 

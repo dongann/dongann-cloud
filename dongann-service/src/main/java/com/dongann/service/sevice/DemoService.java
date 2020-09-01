@@ -1,6 +1,7 @@
 package com.dongann.service.sevice;
 
-import com.dongann.service.util.ServiceResult;
+
+import com.dongann.common.util.ServiceResult;
 
 /**
  * @FileName: DemoService

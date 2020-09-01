@@ -15,6 +15,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>dongann-common</module>
         <module>dongann-eureka</module>
         <module>dongann-service</module>
         <module>dongann-uservice</module>

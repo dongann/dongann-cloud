@@ -1,4 +1,4 @@
-package com.dongann.consunme.dto;
+package com.dongann.common.dto;
 
 import lombok.Data;
 

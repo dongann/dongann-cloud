@@ -1,7 +1,7 @@
-package com.dongann.consunme.exception;
+package com.dongann.common.exception;
 
 
-import com.dongann.consunme.enums.ErrCodes;
+import com.dongann.common.enums.ErrCodes;
 
 /**
  * @FileName: BusinessException
