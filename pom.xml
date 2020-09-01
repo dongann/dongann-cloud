@@ -18,6 +18,7 @@
         <module>dongann-eureka</module>
         <module>dongann-service</module>
         <module>dongann-uservice</module>
+        <module>dongann-consume</module>
     </modules>
 
     <dependencies>

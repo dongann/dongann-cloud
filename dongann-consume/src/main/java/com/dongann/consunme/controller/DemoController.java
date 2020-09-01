@@ -1,7 +1,7 @@
-package com.dongann.service.controller;
+package com.dongann.consunme.controller;
 
-import com.dongann.service.dto.DemoDto;
-import com.dongann.service.sevice.DemoService;
+import com.dongann.consunme.dto.DemoDto;
+import com.dongann.consunme.feign.DemoFeign;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,10 +18,10 @@ import javax.annotation.Resource;
 @RestController
 public class DemoController {
     @Resource
-    private DemoService demoService;
+    private DemoFeign demoFeign;
 
-    @PostMapping("/getDemoInfo.json")
+    @PostMapping("/getFeignDemoInfo.json")
     public String getDemoInfo(@RequestBody DemoDto demoDto){
-        return demoService.getDemoInfo(demoDto.getDemoMsg());
+        return demoFeign.getDemoInfo(demoDto);
     }
 }
