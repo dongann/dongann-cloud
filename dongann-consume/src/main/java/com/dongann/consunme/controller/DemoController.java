@@ -2,6 +2,7 @@ package com.dongann.consunme.controller;
 
 import com.dongann.consunme.dto.DemoDto;
 import com.dongann.consunme.feign.DemoFeign;
+import com.dongann.consunme.util.ServiceResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,7 +22,7 @@ public class DemoController {
     private DemoFeign demoFeign;
 
     @PostMapping("/getFeignDemoInfo.json")
-    public String getDemoInfo(@RequestBody DemoDto demoDto){
+    public ServiceResult getDemoInfo(@RequestBody DemoDto demoDto){
         return demoFeign.getDemoInfo(demoDto);
     }
 }

@@ -1,6 +1,7 @@
 package com.dongann.service.sevice.impl;
 
 import com.dongann.service.sevice.DemoService;
+import com.dongann.service.util.ServiceResult;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,7 +14,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class DemoServiceImpl implements DemoService {
     @Override
-    public String getDemoInfo(String msg) {
-        return msg;
+    public ServiceResult getDemoInfo(String msg) {
+        ServiceResult serviceResult = ServiceResult.getSuccess();
+        serviceResult.put("demoInfo",msg);
+        return serviceResult;
     }
 }

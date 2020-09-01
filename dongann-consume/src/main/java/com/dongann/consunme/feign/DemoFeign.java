@@ -1,6 +1,7 @@
 package com.dongann.consunme.feign;
 
 import com.dongann.consunme.dto.DemoDto;
+import com.dongann.consunme.util.ServiceResult;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,5 +19,5 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface DemoFeign {
 
     @PostMapping("/getDemoInfo.json")
-    public String getDemoInfo(@RequestBody DemoDto demoDto);
+    public ServiceResult getDemoInfo(@RequestBody DemoDto demoDto);
 }

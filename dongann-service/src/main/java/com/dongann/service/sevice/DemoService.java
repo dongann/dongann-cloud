@@ -1,5 +1,7 @@
 package com.dongann.service.sevice;
 
+import com.dongann.service.util.ServiceResult;
+
 /**
  * @FileName: DemoService
  * @Author: <a href="dongann@aliyun.com">dongchang'an</a>.
@@ -9,5 +11,5 @@ package com.dongann.service.sevice;
  */
 public interface DemoService {
 
-    public String getDemoInfo(String msg);
+    public ServiceResult getDemoInfo(String msg);
 }

@@ -2,6 +2,7 @@ package com.dongann.service.controller;
 
 import com.dongann.service.dto.DemoDto;
 import com.dongann.service.sevice.DemoService;
+import com.dongann.service.util.ServiceResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,7 +22,7 @@ public class DemoController {
     private DemoService demoService;
 
     @PostMapping("/getDemoInfo.json")
-    public String getDemoInfo(@RequestBody DemoDto demoDto){
+    public ServiceResult getDemoInfo(@RequestBody DemoDto demoDto){
         return demoService.getDemoInfo(demoDto.getDemoMsg());
     }
 }
