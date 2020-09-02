@@ -1,12 +1,9 @@
 package com.dongann.consunme.feign;
 
 
-import com.dongann.common.dto.DemoDto;
-import com.dongann.common.util.ServiceResult;
+import com.dongann.service.api.DemoApi;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 /**
  * @FileName: DemoFeign
@@ -17,8 +14,5 @@ import org.springframework.web.bind.annotation.RequestBody;
  */
 @Component
 @FeignClient("DONGANN-SERVICE")
-public interface DemoFeign {
-
-    @PostMapping("/getDemoInfo.json")
-    public ServiceResult getDemoInfo(@RequestBody DemoDto demoDto);
+public interface DemoFeign extends DemoApi {
 }

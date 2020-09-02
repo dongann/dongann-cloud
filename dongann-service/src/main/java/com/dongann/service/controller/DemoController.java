@@ -3,9 +3,8 @@ package com.dongann.service.controller;
 
 import com.dongann.common.dto.DemoDto;
 import com.dongann.common.util.ServiceResult;
+import com.dongann.service.api.DemoApi;
 import com.dongann.service.sevice.DemoService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -18,12 +17,12 @@ import javax.annotation.Resource;
  * @description:
  */
 @RestController
-public class DemoController {
+public class DemoController implements DemoApi {
     @Resource
     private DemoService demoService;
 
-    @PostMapping("/getDemoInfo.json")
-    public ServiceResult getDemoInfo(@RequestBody DemoDto demoDto){
+    @Override
+    public ServiceResult getDemoInfo(DemoDto demoDto){
         return demoService.getDemoInfo(demoDto.getDemoMsg());
     }
 }
