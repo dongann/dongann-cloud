@@ -8,3 +8,8 @@ eureka:
 spring:
   application:
     name: dongann-consumer
+
+feign:
+  ##开启Hystrix断路器
+  hystrix:
+    enabled: true

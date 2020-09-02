@@ -1,6 +1,7 @@
 package com.dongann.consunme.feign;
 
 
+import com.dongann.consunme.fallback.DemoFeignFallback;
 import com.dongann.service.api.DemoApi;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
@@ -13,6 +14,6 @@ import org.springframework.stereotype.Component;
  * @description:
  */
 @Component
-@FeignClient("DONGANN-SERVICE")
+@FeignClient(name = "DONGANN-SERVICE",fallback = DemoFeignFallback.class)
 public interface DemoFeign extends DemoApi {
 }
