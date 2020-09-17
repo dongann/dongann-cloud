@@ -1,0 +1,21 @@
+server:
+  port: 8765
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: dongann-zuul
+
+# 构建路由地址
+zuul:
+  routes:
+    # 这里可以自定义
+    dongann-consumer:
+      # 匹配的路由规则
+      path: /consume/**
+      # 路由的目标服务名
+      serviceId: dongann-consumer
+

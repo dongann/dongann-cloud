@@ -20,6 +20,7 @@
         <module>dongann-service</module>
         <module>dongann-uservice</module>
         <module>dongann-consume</module>
+        <module>dongann-zuul</module>
     </modules>
 
     <dependencies>
