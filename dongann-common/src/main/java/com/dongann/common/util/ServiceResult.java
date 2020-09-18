@@ -1,9 +1,12 @@
 package com.dongann.common.util;
 
 
+import com.alibaba.fastjson.JSON;
 import com.dongann.common.enums.ErrCodes;
 import com.dongann.common.exception.BusinessException;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
@@ -200,6 +203,18 @@ public class ServiceResult extends HashMap implements Serializable {
         ServiceResult result = getError(errCode);
         result.put(key,t);
         return result;
+    }
+
+    public static void writerJson(Object o, HttpServletResponse response) {
+        try {
+            response.setContentType("text/json;charset=UTF-8");
+            response.getWriter().write(JSON.toJSONString(o));
+            response.getWriter().flush();
+            response.getWriter().close();
+        } catch (IOException var3) {
+            var3.printStackTrace();
+        }
+
     }
 
 }

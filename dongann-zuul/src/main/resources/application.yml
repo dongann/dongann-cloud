@@ -19,3 +19,14 @@ zuul:
       # 路由的目标服务名
       serviceId: dongann-consumer
 
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000
+
+dongann-consumer:
+  ribbon:
+    ReadTimeout: 15000

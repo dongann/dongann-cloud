@@ -6,36 +6,20 @@ public enum ErrCodes {
 
     UNKNOWN_ERROR("0001","未知异常"),
 
-    DB_ERROR("0002","数据库操作异常"),
+    TOKEN_ERROR("0002","token验证错误"),
 
-    PARAM_ERROR("0003","参数验证错误"),
+    SIGN_ERROR("0003", "验签名失败"),
 
-    SYSTEM_ERROR("0004","系统异常"),
+    UN_AUTH_ERROR("0004","用户未登陆"),
 
-    BUSINESS_ERROR("0005","业务错误"),
+    PARAM_ERROR("0005","参数验证错误"),
 
-    INFO_ERROR("0006", "提示级错误"),
+    SYSTEM_ERROR("0006","系统异常"),
 
-    SYSTEM_MAINTAIN_ERROR("0007","系统正在维护"),
+    BUSINESS_ERROR("0007","业务错误"),
 
-    UN_AUTH_ERROR("0008","用户未登陆"),
+    SYSTEM_MAINTAIN_ERROR("0008","系统正在维护");
 
-    DUPLICATED_PAY_ERROR("0009","重复支付"),
-
-    UN_HAS_PASSWORD("0010","未设置支付密码"),
-
-    AUTH_ERROR("0011", "审核中"),
-
-    AUTH_REJECT_ERROR("0012", "审核拒绝"),
-
-    NOT_ENOUGH_REFUND_BAL("0013","退款基本账户余额不足"),
-
-    CAN_NO_ADD_CUSER("0014","创建用户失败"),
-
-    SIGN_ERROR("0015", "验签名失败"),
-
-    STOCK_ERROR("0016", "库存充足,不能退款"),
-    CENTER_ERROR("0017", "抱歉，收货地区的服务正在建设中，敬请期待！");
 
 
     private String _code;

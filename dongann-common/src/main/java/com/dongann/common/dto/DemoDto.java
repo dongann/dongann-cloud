@@ -14,4 +14,5 @@ import java.io.Serializable;
 @Data
 public class DemoDto implements Serializable {
     private String demoMsg;
+    private String token;
 }
