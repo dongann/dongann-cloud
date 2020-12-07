@@ -3,6 +3,7 @@ package com.dongann.consunme.controller;
 import com.dongann.common.dto.DemoDto;
 import com.dongann.common.util.ServiceResult;
 import com.dongann.consunme.feign.DemoFeign;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -17,6 +18,7 @@ import javax.annotation.Resource;
  * @Version: v1.0
  * @description:
  */
+@Slf4j
 @RestController
 public class DemoController {
     @Resource
